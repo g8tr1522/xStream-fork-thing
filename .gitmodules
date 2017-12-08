@@ -1,3 +1,3 @@
 [submodule "Phrases"]
-	path = Phrases
+	path = source
 	url = https://github.com/g8tr1522/Phrases
