@@ -1,3 +1,4 @@
 [submodule "Phrases"]
-	path = Phrases
-	url = https://github.com/g8tr1522/Phrases
+	path   = Phrases
+	url    = https://github.com/g8tr1522/Phrases
+	branch = new-path-defs
