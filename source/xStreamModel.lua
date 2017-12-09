@@ -305,6 +305,10 @@ function xStreamModel:__init(process)
     ["xLFO"] = {
       access = function(env) return xLFO end,
     },
+		
+		["Phrases"] = {
+      access = function(env) return phrases end,
+    },
 
   }
 

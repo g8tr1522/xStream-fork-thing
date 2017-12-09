@@ -7,6 +7,9 @@ com.renoise.xStream.xrnx (main.lua)
 
 ]]
 
+-- reload tool whenever source has changed
+_AUTO_RELOAD_DEBUG = true
+
 ---------------------------------------------------------------------------------------------------
 -- global variables
 ---------------------------------------------------------------------------------------------------
@@ -19,6 +22,15 @@ _trace_filters = nil -- don't show traces in console
 ---------------------------------------------------------------------------------------------------
 -- required files
 ---------------------------------------------------------------------------------------------------
+
+package.path = package.path 
+						.. ';./Phrases/phrases/?.lua'
+						.. ';./Phrases/phrases/ins/?.lua'
+						.. ';./Phrases/phrases/utils/?.lua'
+						.. ';./Phrases/phrases/tabler/?.lua'
+						--.. ';./Phrases/phrases/?.lua'
+	
+require('Phrases.phrases')
 
 _clibroot = 'source/cLib/classes/'
 _vlibroot = 'source/vLib/classes/'

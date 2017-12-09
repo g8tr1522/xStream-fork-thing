@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xStreamPrefs doc_version="0">
+  <autostart>false</autostart>
+  <launch_model>C:\Users\William J Prophet\AppData\Roaming\Renoise\V3.1.1\Scripts\Tools\com.renoise.xStream-with-Phrases.xrnx\/userdata/models/template - latch2nil.lua</launch_model>
+  <launch_selected_model>true</launch_selected_model>
+  <user_folder>C:\Users\William J Prophet\AppData\Roaming\Renoise\V3.1.1\Scripts\Tools\com.renoise.xStream-with-Phrases.xrnx\/userdata/</user_folder>
+  <midi_multibyte_enabled>false</midi_multibyte_enabled>
+  <midi_nrpn_enabled>false</midi_nrpn_enabled>
+  <midi_terminate_nrpns>false</midi_terminate_nrpns>
+  <midi_inputs/>
+  <midi_outputs/>
+  <osc_client_host>127.0.0.1</osc_client_host>
+  <osc_client_port>8000</osc_client_port>
+  <osc_client_first_run>true</osc_client_first_run>
+  <live_coding>true</live_coding>
+  <editor_visible_lines>39</editor_visible_lines>
+  <favorites_pinned>false</favorites_pinned>
+  <model_args_visible>false</model_args_visible>
+  <model_browser_visible>false</model_browser_visible>
+  <presets_visible>false</presets_visible>
+  <show_editor>true</show_editor>
+  <tool_options_visible>false</tool_options_visible>
+  <compact_mode>false</compact_mode>
+  <suspend_when_hidden>true</suspend_when_hidden>
+  <start_option>3</start_option>
+  <scheduling>2</scheduling>
+  <mute_mode>2</mute_mode>
+  <writeahead_factor>175</writeahead_factor>
+  <automation_playmode>1.0</automation_playmode>
+  <include_hidden>false</include_hidden>
+  <clear_undefined>true</clear_undefined>
+  <expand_columns>true</expand_columns>
+</xStreamPrefs>
