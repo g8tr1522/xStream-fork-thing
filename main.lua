@@ -24,13 +24,13 @@ _trace_filters = nil -- don't show traces in console
 ---------------------------------------------------------------------------------------------------
 
 package.path = package.path 
-						.. ';./Phrases/phrases/?.lua'
-						.. ';./Phrases/phrases/ins/?.lua'
-						.. ';./Phrases/phrases/utils/?.lua'
-						.. ';./Phrases/phrases/tabler/?.lua'
-						--.. ';./Phrases/phrases/?.lua'
+						.. ';./Phrases/Phrases/?.lua'
+						.. ';./Phrases/Phrases/Ins/?.lua'
+						.. ';./Phrases/Phrases/utils/?.lua'
+						.. ';./Phrases/Phrases/tabler/?.lua'
+						--.. ';./Phrases/Phrases/?.lua'
 	
-require('Phrases.phrases')
+require('Phrases.Phrases')
 
 _clibroot = 'source/cLib/classes/'
 _vlibroot = 'source/vLib/classes/'

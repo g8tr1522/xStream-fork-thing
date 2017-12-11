@@ -307,7 +307,7 @@ function xStreamModel:__init(process)
     },
 		
 		["Phrases"] = {
-      access = function(env) return phrases end,
+      access = function(env) return Phrases end,
     },
 
   }
