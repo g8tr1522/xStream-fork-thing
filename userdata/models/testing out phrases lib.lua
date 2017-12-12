@@ -45,10 +45,10 @@ if (xinc==latch2nil()) then
   
   Phrases.Ins:print_info('l')
   obj = Phrases.Ins:new("mp_lead", {nopl = 64, dub=5})
-  --obj:print_info()
+  obj:print_info()
   obj:set_notes{10,20,30,40}
   obj:set_delays{1,2,4,4.5}
-  --obj:print_info('dp')
+  obj:print_info('dp')
   
   print("\nAll done initializing.")
   print("----------------------------------------\n\n")
