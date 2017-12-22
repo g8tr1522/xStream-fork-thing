@@ -163,10 +163,8 @@ end)
 local key_mapping, midi_mapping = nil,nil
 
 --== "favorites" ==--
--- NB: temporarily disabled due to lua runtime error:
--- https://github.com/renoise/xrnx/issues/102
---[[
-for i = 1,16 do
+
+for i = 1,64 do
   midi_mapping = MIDI_PREFIX..("Favorites:Favorite #%.2d [Trigger]"):format(i)
   renoise.tool():add_midi_mapping{
     name = midi_mapping,
@@ -214,9 +212,10 @@ for i = 1,16 do
       end
     end
   }
+--[[
+]]
   
 end
-]]
 
 midi_mapping = MIDI_PREFIX.."Presets:Select Next Preset [Trigger]"
 renoise.tool():add_midi_mapping{
