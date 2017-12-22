@@ -100,7 +100,7 @@ require ('source/xStreamUIArgsEditor')
 ---------------------------------------------------------------------------------------------------
 
 local xstream
-local TOOL_NAME = "xStream"
+local TOOL_NAME = "xStream with Libraries"
 local MIDI_PREFIX = "Tools:"..TOOL_NAME..":"
 
 renoise.tool().preferences = xStreamPrefs()
