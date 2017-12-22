@@ -1,4 +1,0 @@
-[submodule "Phrases"]
-	path   = Phrases
-	url    = https://github.com/g8tr1522/Phrases/
-	branch = xStream   #generally should be even with master branch
