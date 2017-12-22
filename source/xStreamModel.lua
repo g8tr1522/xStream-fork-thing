@@ -7,6 +7,9 @@ xStreamModel
 
 ]]
 
+-- reload tool whenever source has changed
+_AUTO_RELOAD_DEBUG = true
+
 --==============================================================================
 
 class 'xStreamModel'
@@ -305,7 +308,11 @@ function xStreamModel:__init(process)
     ["xLFO"] = {
       access = function(env) return xLFO end,
     },
-
+		
+    -- ["library_name_here"] = {
+      -- access = function(env) return library_name_here end,
+    -- },
+		
   }
 
   self.sandbox.properties = props_table
