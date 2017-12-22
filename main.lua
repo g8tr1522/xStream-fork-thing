@@ -23,7 +23,8 @@ _trace_filters = nil -- don't show traces in console
 -- required files
 ---------------------------------------------------------------------------------------------------
 
-
+_userlibroot = 'source/userlib/'
+require (_userlibroot..'userlib')
 
 _clibroot = 'source/cLib/classes/'
 _vlibroot = 'source/vLib/classes/'

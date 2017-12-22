@@ -309,8 +309,8 @@ function xStreamModel:__init(process)
       access = function(env) return xLFO end,
     },
 		
-    -- ["library_name_here"] = {
-      -- access = function(env) return library_name_here end,
+    -- ["userlib"] = {
+      -- access = function(env) return userlib end,
     -- },
 		
   }
