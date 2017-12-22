@@ -23,14 +23,7 @@ _trace_filters = nil -- don't show traces in console
 -- required files
 ---------------------------------------------------------------------------------------------------
 
-package.path = package.path 
-						.. ';./Phrases/Phrases/?.lua'
-						.. ';./Phrases/Phrases/Ins/?.lua'
-						.. ';./Phrases/Phrases/utils/?.lua'
-						.. ';./Phrases/Phrases/tabler/?.lua'
-						--.. ';./Phrases/Phrases/?.lua'
-	
-require('Phrases.Phrases')
+
 
 _clibroot = 'source/cLib/classes/'
 _vlibroot = 'source/vLib/classes/'
@@ -109,7 +102,7 @@ require ('source/xStreamUIArgsEditor')
 ---------------------------------------------------------------------------------------------------
 
 local xstream
-local TOOL_NAME = "xStream"
+local TOOL_NAME = "xStream with Libraries"
 local MIDI_PREFIX = "Tools:"..TOOL_NAME..":"
 
 renoise.tool().preferences = xStreamPrefs()
@@ -175,10 +168,8 @@ end)
 local key_mapping, midi_mapping = nil,nil
 
 --== "favorites" ==--
--- NB: temporarily disabled due to lua runtime error:
--- https://github.com/renoise/xrnx/issues/102
---[[
-for i = 1,16 do
+
+for i = 1,64 do
   midi_mapping = MIDI_PREFIX..("Favorites:Favorite #%.2d [Trigger]"):format(i)
   renoise.tool():add_midi_mapping{
     name = midi_mapping,
@@ -226,9 +217,10 @@ for i = 1,16 do
       end
     end
   }
+--[[
+]]
   
 end
-]]
 
 midi_mapping = MIDI_PREFIX.."Presets:Select Next Preset [Trigger]"
 renoise.tool():add_midi_mapping{

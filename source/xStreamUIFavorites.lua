@@ -963,9 +963,9 @@ function xStreamUIFavorites:apply_property(favorite_idx,prop_name,prop_value)
   if self.xstream.selected_model then
     if (favorite.model_name == self.xstream.selected_model.name) then
       self.xstream.ui.model_toolbar:update() 
-      self.xstream.ui.presets:update_list() 
+      self.xstream.ui:update_preset_list() 
       if (favorite.preset_bank_name == self.xstream.selected_model.selected_preset_bank.name) then
-        self.xstream.ui.presets:update_controls() 
+        self:update_preset_controls() 
       end
     end
   end

@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xStreamPrefs doc_version="0">
   <autostart>false</autostart>
+<<<<<<< HEAD
   <launch_model>C:\Users\William J Prophet\AppData\Roaming\Renoise\V3.1.1\Scripts\Tools\com.renoise.xStream-with-Phrases.xrnx\/userdata/models/testing out phrases lib.lua</launch_model>
   <launch_selected_model>true</launch_selected_model>
   <user_folder>C:\Users\William J Prophet\AppData\Roaming\Renoise\V3.1.1\Scripts\Tools\com.renoise.xStream-with-Phrases.xrnx\/userdata/</user_folder>
+=======
+  <launch_model/>
+  <launch_selected_model>true</launch_selected_model>
+  <user_folder>C:\Users\William J Prophet\AppData\Roaming\Renoise\V3.1.1\Scripts\Tools\com.renoise.xStream.xrnx\/userdata/</user_folder>
+>>>>>>> vanilla-with-new-name
   <midi_multibyte_enabled>false</midi_multibyte_enabled>
   <midi_nrpn_enabled>false</midi_nrpn_enabled>
   <midi_terminate_nrpns>false</midi_terminate_nrpns>
@@ -13,7 +19,11 @@
   <osc_client_port>8000</osc_client_port>
   <osc_client_first_run>true</osc_client_first_run>
   <live_coding>true</live_coding>
+<<<<<<< HEAD
   <editor_visible_lines>37</editor_visible_lines>
+=======
+  <editor_visible_lines>16</editor_visible_lines>
+>>>>>>> vanilla-with-new-name
   <favorites_pinned>false</favorites_pinned>
   <model_args_visible>false</model_args_visible>
   <model_browser_visible>false</model_browser_visible>
