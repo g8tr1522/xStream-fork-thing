@@ -318,6 +318,10 @@ function xStreamModel:__init(process)
       access = function(env) return userlib.example_package end,
     },
 		
+		["lam"] = {
+      access = function(env) return userlib.LuaArrayMethods end,
+    },
+		
 		
   }
 

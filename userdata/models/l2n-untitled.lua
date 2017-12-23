@@ -30,11 +30,10 @@ if (xinc==latch2nil()) then
   print("\n----------------------------------------")
   print("Initializing model ... \n")
   
-  print(userlib.testmod.foo1)
-  print(testmod.foo1)
-  print(userlib.example_package)
-  print(ex_pkg)
-  ex_pkg.foo()
+  t = lam.new("range", -2,2,0.5)
+  print(t:unpack())
+  t:shuffle_()
+  print(t:unpack())
   
   print("\nAll done initializing.")
   print("----------------------------------------\n\n")
