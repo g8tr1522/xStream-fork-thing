@@ -1,5 +1,5 @@
 --[[===========================================================================
-template - latch2nil.lua
+using the userlib module.lua
 ===========================================================================]]--
 
 return {
@@ -15,19 +15,6 @@ options = {
  color = 0x000000,
 },
 callback = [[
--------------------------------------------------------------------------------
--- Empty configuration - with latch2nil function --
----------------------------------------------------
--- This is the base template for models that use latch2nil
--- latch2nil is already defined at the top.
--- latch2nil is a function that returns 0 the at the first call,
-    -- but returns nil for successive calls
--- This function is used in an if block to create an 'initial state'
-    -- for xStream sessions.
-    -- This is useful for instantiating objects, new variables, etc.
--------------------------------------------------------------------------------
--------------------------------------------------------------------------------
-
 --function definition is below: (very condensed, to save space)
 latch2nil = function() 
   latch = function (val)
@@ -43,7 +30,9 @@ if (xinc==latch2nil()) then
   print("\n----------------------------------------")
   print("Initializing model ... \n")
   
-  -- initialize stuff here
+  print(userlib.example_package)
+  print(ex_pkg) -- this should print the same thing as above
+  ex_pkg.foo()
   
   print("\nAll done initializing.")
   print("----------------------------------------\n\n")
