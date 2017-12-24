@@ -322,6 +322,10 @@ function xStreamModel:__init(process)
       access = function(env) return userlib.LuaArrayMethods end,
     },
 		
+		["Phrases"] = {
+      access = function(env) return userlib.Phrases end,
+    },
+		
 		
   }
 
