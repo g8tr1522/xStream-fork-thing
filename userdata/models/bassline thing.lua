@@ -17,10 +17,14 @@ options = {
 callback = [[
 --function definition is below: (very condensed, to save space)
 latch2nil = function() 
-  latch = function (val)
-    if val    then val = nil; return 0;    else return nil;
-  end; end;
-  i = 0; return latch(i)
+  local latch = function (val)
+    if val    then 
+      val = nil; 
+      return 1;    
+    end; 
+  end;
+  local i = 0; 
+  return latch(i)
 end
 
 all = function(t, func)
@@ -36,8 +40,11 @@ if (xinc==latch2nil()) then
   print("\n----------------------------------------")
   print("Initializing model ... \n")
   
+  print("hi")
+  print("Phrases.Ins is ", tostring(Phrases.Ins))
   Phrases.Ins:print_info('l')
-  obj = Phrases.Ins:new{nnp=1, nopl = 32, dub=9}
+  obj = Phrases.Ins:new{nnp=1, dub=9}
+  print("obj is ", tostring(obj))
   obj:print_info('l')
   
   notes = {72,72,94,96, 75,77, 65,77,65,77,63,75}
@@ -74,7 +81,7 @@ elseif (xpos.line == 12) then
   obj.dm:shake{0.25, 6}
   obj:print_info('d')
 else
-  --xline.note_columns[1].note_value = EMPTY_NOTE_VALUE
+  xline.note_columns[1].note_value = EMPTY_NOTE_VALUE
   --comment out the above line to get something interesting
 end
 ]],

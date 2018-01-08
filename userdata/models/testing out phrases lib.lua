@@ -17,10 +17,17 @@ options = {
 callback = [[
 --function definition is below: (very condensed, to save space)
 latch2nil = function() 
-  latch = function (val)
-    if val    then val = nil; return 0;    else return nil;
-  end; end;
-  i = 0; return latch(i)
+  local latch = function (val)
+    if val then 
+      val = nil; 
+      return 1;    
+    else 
+      return nil;    
+    end; 
+  end;
+  
+  local i = 0; 
+  return latch(i)
 end
 
 all = function(t, func)
@@ -29,12 +36,14 @@ all = function(t, func)
   end
   return t
 end
+
 -------------------------------------------------------------------------------
 -------------------------------------------------------------------------------
 
 if (xinc==latch2nil()) then
   print("\n----------------------------------------")
   print("Initializing model ... \n")
+  print("pattern, line = ", xpos.sequence, xpos.line)
   
   Phrases.Ins:print_info('l')
   obj = Phrases.Ins:new{nnp=1, nopl = 32, dub=9}
@@ -61,21 +70,8 @@ end
 
 -- Regular xStream stuff goes here
 
---print(xpos.line, obj.get:pl()+1)
 
-if (xpos.line == (obj.get:pl()+1)) then
-  local pick = {1,2,2,3,3,3,4}
-  
-  xline.note_columns[1].note_value = 
-      obj.get:note() - (12* pick[math.random(#pick)])
-  xline.note_columns[1].instrument_value = 0 
-  obj:vc{inc=1}
-elseif (xpos.line == 12) then
-  obj.dm:shake{0.25, 6}
-  obj:print_info('d')
-else
-  xline.note_columns[1].note_value = EMPTY_NOTE_VALUE
-  --comment out the above line to get something interesting
-end
+print("pattern, line = ", xpos.sequence, xpos.line)
+xline.note_columns[1].note_value = NOTE_OFF_VALUE
 ]],
 }
