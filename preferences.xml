@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xStreamPrefs doc_version="0">
   <autostart>false</autostart>
-  <launch_model>C:\Users\William J Prophet\AppData\Roaming\Renoise\V3.1.1\Scripts\Tools\com.renoise.xStream.xrnx\/userdata/models/testing out phrases lib.lua</launch_model>
+  <launch_model>C:\Users\William J Prophet\AppData\Roaming\Renoise\V3.1.1\Scripts\Tools\com.renoise.xStream.xrnx\/userdata/models/messing with model user data.lua</launch_model>
   <launch_selected_model>true</launch_selected_model>
   <user_folder>C:\Users\William J Prophet\AppData\Roaming\Renoise\V3.1.1\Scripts\Tools\com.renoise.xStream.xrnx\/userdata/</user_folder>
   <midi_multibyte_enabled>false</midi_multibyte_enabled>
