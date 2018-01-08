@@ -4,6 +4,10 @@ userlib = {}
 
 -- in main.lua, there should be a constant `_userlibroot` with value "source/userlib/"
 
+_mainroot = ''	-- avoids errors from testing for existence of `_mainroot` in Phrases and LAM
+--local _old_mainroot = ''
+--if _mainroot then _old_mainroot = _mainroot end  -- stash old mainroot and reload it at the end of this file
+--_mainroot = _mainroot or ''
 
 
 -- example package
