@@ -320,6 +320,11 @@ function xStreamModel:__init(process)
     },
 		
 		
+    ["lam"] = {
+      access = function(env) return userlib.LuaArrayMethods end,
+    },
+		
+		
   }
 
   self.sandbox.properties = props_table
