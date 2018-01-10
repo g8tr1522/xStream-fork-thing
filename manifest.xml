@@ -7,5 +7,5 @@
   <Author>danoise [bjorn.nesby@gmail.com]</Author>
   <Category>Renoise Team</Category>
   <Description>xStream is a live coding environment for Renoise which can generate or transform existing song data. Launch by using the shortcut in the Tools menu</Description>
-  <Homepage>https://github.com/g8tr1522/xStream-fork-thing</Homepage>
+  <Homepage>http://renoise.com/tools/xStream</Homepage>
 </RenoiseScriptingTool>

@@ -1,6 +1,0 @@
-[submodule "source/userlib/LuaArrayMethods"]
-	path = source/userlib/LuaArrayMethods
-	url = https://github.com/g8tr1522/LuaArrayMethods.git
-[submodule "source/userlib/Phrases"]
-	path = source/userlib/Phrases
-	url = https://github.com/g8tr1522/Phrases.git

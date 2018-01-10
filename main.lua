@@ -7,9 +7,6 @@ com.renoise.xStream.xrnx (main.lua)
 
 ]]
 
--- reload tool whenever source has changed
-_AUTO_RELOAD_DEBUG = true
-
 ---------------------------------------------------------------------------------------------------
 -- global variables
 ---------------------------------------------------------------------------------------------------
@@ -22,9 +19,6 @@ _trace_filters = nil -- don't show traces in console
 ---------------------------------------------------------------------------------------------------
 -- required files
 ---------------------------------------------------------------------------------------------------
-
-_userlibroot = 'source/userlib/'
-require (_userlibroot..'userlib')
 
 _clibroot = 'source/cLib/classes/'
 _vlibroot = 'source/vLib/classes/'
@@ -103,7 +97,7 @@ require ('source/xStreamUIArgsEditor')
 ---------------------------------------------------------------------------------------------------
 
 local xstream
-local TOOL_NAME = "xStream with Libraries"
+local TOOL_NAME = "xStream"
 local MIDI_PREFIX = "Tools:"..TOOL_NAME..":"
 
 renoise.tool().preferences = xStreamPrefs()
