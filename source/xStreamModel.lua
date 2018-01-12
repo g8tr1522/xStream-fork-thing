@@ -309,21 +309,19 @@ function xStreamModel:__init(process)
       access = function(env) return xLFO end,
     },
 		
----- Make libraries visible here
+---- Make user libraries visible here
     ["userlib"] = {
       access = function(env) return userlib end,
-    },		
+    },
+		
 		-- use dot syntax to access modules included in userlib.lua
     ["ex_pkg"] = {	-- notice that you can rename the package
       access = function(env) return userlib.example_package end,
     },
 		
-		["lam"] = {
-      access = function(env) return userlib.LuaArrayMethods end,
-    },
 		
-		["Phrases"] = {
-      access = function(env) return userlib.Phrases end,
+    ["lam"] = {
+      access = function(env) return userlib.LuaArrayMethods end,
     },
 		
 		
